@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@font-face {
+    font-family: Biker;
+    src: url('../font/Louisiana\ Biker\ Shop.otf');
+}
+
+body p {
+    font-family: 'Nunito', sans-serif;
+}
+.aboutUs {
+    gap: 20%;
+    background-image: url(../Img/bgcoffee.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: color-burn;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.aboutUs::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: black;
+    position: absolute;
+    opacity: 60%;
+    bottom: 0;
+}
+.carousel_container {
+    width: 90%;
+    height: auto;
+    margin: 2% auto;
+    padding-bottom: 2%;
+    position: relative;
+    overflow: hidden;
+    
+}
+.carousel_container i {
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    background-color: gray;
+    padding: 1%;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+#nextBtn {
+    top: 48%;
+    right: 0%;
+}
+#prevBtn {
+    top: 48%;
+}
+.carousel_container .carousel_slider {
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+}
+.carousel_slider .img {
+    min-width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+}
+.carousel_slider .img .content {
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+.carousel_slider .img .content img {
+    width: 100%;
+}
+.carousel .carousel-inner .carousel-item .btn {
+    border-radius: 20px;
+    width: 100px;
+    transition: 0.3s;
+    border: none;
+    z-index: -5;
+}
+.hero {
+    width: 100%;
+    height: 600px;
+    background-image: url(../Img/hero.png);
+    background-size: cover;
+    position: relative;
+}
+.hero .navbar {
+    z-index: 1;
+}
+.hero::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: black;
+    position: absolute;
+    opacity: 25%;
+    bottom: 0;
+}
+.hero .desc {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    left: 29%;
+    top: 37%;
+    text-align: center;
+}
+.hero .desc p {
+    font-style: italic;
+}
+.spesial {
+    width: 22%;
+    height: 300px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius:  20px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+.special .spesial .round {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid green;
+    background-color: #036635;
+    margin-top: -25px;
+}
+.tempat {
+    position: relative;
+    /* background-color: #f1f1f1; */
+    background-image: url(../Img/bg4.jpg);
+    background-attachment: fixed;
+}
+.special .spesial .desc {
+    margin-top: 1em;
+    text-align: center;
+    padding: 0px 0.5rem;
+    color: black;
+}
+.special .spesial .desc h4 {
+    font-weight: bold;
+    color: green;
+}
+.special .spesial .desc .btn {
+    border-radius: 20px;
+    width: 100px;
+    background-color: #036635;
+}
+.footer {
+    height: 0px;
+    background-color: #f1f1f1;
+}
+.aboutUs .desc {
+    width: 40%;
+    text-align: left;
+}
+.aboutUs .desc p {
+    z-index: 1;
+    color: white;
+}
+.aboutUs .desc h1 {
+    z-index: 1;
+    color: red;
+    font-family: Biker;
+}
+.aboutUs .desc h5 {
+    z-index: 1;
+    color: white;
+}
+.aboutUs img {
+    z-index: 1;
+}
+.special .spesial .desc .btn {
+    border-radius: 20px;
+    width: 100px;
+}
+.djamudjuRoastbeans {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   background-image: url(../Img/bg-p-4.jpg);
+   background-size: cover;
+   padding: 3% 0% 3% 0%;
+   background-attachment: fixed;
+   position: relative;
+}
+.djamudjuRoastbeans::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: black;
+    position: absolute;
+    opacity: 60%;
+    bottom: 0;
+}
+.djamudjuRoastbeans .desc {
+    padding: 2% 7% 10% 7%;
+    width: 50%;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.djamudjuRoastbeans .desc h1 {
+    font-family: Biker;
+   
+}
+.djamudjuRoastbeans img {
+    margin-top: -10%;
+    z-index: 1;
+    width: 250px;
+}
+#roastBeans .product .desContainer .btn {
+    border-radius: 20px;
+    width: 125px;
+    background-color: #036635 !important;
+}
+#roastBeans .product .desContainer h1 {
+    font-family: Biker;
+}
+
+/* #product .btn {
+    border-radius: 20px;
+        width: 100px;
+        transition: 0.3s;
+        border: none;
+        z-index: -5;
+        background-color: #036635;
+} */
+/* #product .carousel_slider .img .content .btn {
+        border-radius: 20px;
+        width: 100px;
+        transition: 0.3s;
+        border: none;
+        z-index: -5;
+}
+#product .img .content h4 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: green;
+    margin-top: 1em;
+}
+#product .content:hover #price {
+    background-color: green;
+    z-index: -5;
+}
+#product .img .content img {
+    transition: 0.5s;
+    z-index: 5;
+}
+
+#product .img .content img:hover {
+    transition: 0.5s;
+    z-index: 5;
+    transform: translateY(-15px);
+} */
+.tempat img {
+    width: 480px;
+    display: block;
+    margin: auto;
+    z-index: 5;
+    border-radius: 20px;
+    border: 5px solid white;
+}
+.tempat .tempat-1 .square {
+    width: 480px;
+    height: 300px;
+    position: absolute;
+    z-index: 0;
+    border-radius: 20px;
+    background-color: #036635;
+    top: 4%;
+    left: 6%;
+}
+.tempat .tempat-1 .desc {
+    width: 50%;
+}
+.tempat .tempat-2 {
+    position: relative;
+}
+.tempat .tempat-2 .square {
+    width: 480px;
+    height: 300px;
+    position: absolute;
+    z-index: 0;
+    border-radius: 20px;
+    background-color: green;
+    top: 10%;
+    right: 6%;
+}
+.tempat .tempat-2 .desc {
+    width: 50%;
+}
+.howto {
+    position: relative;
+}
+
+.howto .desc {
+    background-color: #036635;
+    position:absolute;
+    padding: 2% 0% 2% 1%;
+    border-radius: 20px;
+    left: 17%;
+    top: 15%;
+    color: #f1f1f1;
+    width: 400px;
+    z-index: 1;
+    border: 3px solid white;
+}
+.howto .desc h4 {
+    font-size: 1em;
+}
+.howto .desc p {
+    font-size: 0.9em;
+}
+.howto img {
+    display: block;
+    margin-left: 37%;
+    z-index: 0;
+    
+    border-radius: 20px;
+}
+.stepstep {
+    margin-top: -5%;
+    z-index: 1;
+}
+.stepstep .step {
+    width: 20%;
+    padding: 1%;
+    z-index: 1;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    
+}
+.partner {
+    background-color: #f1f1f1;
+    
+}
+.partner .round {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: 2%;
+}
+
+@media (max-width: 575.98px) { 
+    
+    .hero {
+        height: 350px;
+        background-size: cover;
+       
+    }
+    .hero .desc {
+        left: 3%;
+        font-size: 0.7em;
+    }
+    .special {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -10%;
+        margin-bottom: 0px !important;
+        
+    }
+    .special .spesial {
+        width: 75%;
+        margin-bottom: 75px;
+        margin-top: 0px;
+    }
+    .special .special-2 button {
+        margin-top: -5%;
+    }
+    .aboutUs {
+        flex-direction: column-reverse !important;
+        margin-top: 0rem !important;
+        align-items: center;
+    }
+    .aboutUs::after {
+        left: 0;
+    }
+    .aboutUs img {
+        
+        margin-top: 0rem !important;
+        margin-bottom: 2rem;
+    }
+    .aboutUs .desc {
+        width: 100%;
+        padding-left: 0rem !important;
+        text-align: left;
+    }
+    .aboutUs .desc {
+        flex-direction: column;
+    }
+    .tempat .tempat-1 {
+        flex-direction: column;
+    }
+    .tempat img {
+        width: 300px;
+    }
+    .tempat .tempat-1 .square {
+        display: none;
+    }
+    .tempat .tempat-1 .desc {
+        width: 100%;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .tempat .tempat-2 {
+        flex-direction: column !important;
+        margin-top: 0rem !important;
+    }
+    .tempat .tempat-2 .square {
+        display: none;
+    }
+    .tempat .tempat-2 .desc {
+        width: 100%;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .djamudjuRoastbeans {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .djamudjuRoastbeans .desc  {
+        width: 100%;
+        text-align: left;
+    }
+    .roastBeans .product {
+        flex-direction: column !important;
+        width: 100%;
+    }
+    .roastBeans .product .imageContainer {
+        width: 100% !important;
+    }
+    .roastBeans .product .desContainer {
+        width: 100% !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .howto {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .howto .desc {
+        left: 0;
+        top: 0;
+        width: 75%;
+        margin: auto;
+        position: relative !important;
+        margin-top: -2rem;
+    }
+    .howto img {
+        width: 100% !important;
+        margin-left: 0 !important;
+        position: relative !important;
+    }
+    .stepstep {
+        flex-direction: column;
+        margin-top: 2% !important;
+    }
+    .stepstep .step {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    .partner .logo .round {
+        width: 50px;
+        height: 50px;
+    }
+}
